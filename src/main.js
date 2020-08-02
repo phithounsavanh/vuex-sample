@@ -1,31 +1,8 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
 import App from "./App.vue";
-
-import Home from "./components/Home.vue";
-import Profile from "./components/Profile.vue";
+import router from "./router";
 
 Vue.config.productionTip = false;
-
-Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: Home,
-  },
-  {
-    path: "/profile",
-    name: "profile",
-    component: Profile,
-  },
-];
-
-const router = new VueRouter({
-  mode: "history",
-  routes,
-});
 
 new Vue({
   router,
